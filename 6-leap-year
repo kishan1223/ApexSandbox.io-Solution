@@ -1,3 +1,0 @@
-public Boolean isLeapYear(Integer year) {
-    //code here
-}
