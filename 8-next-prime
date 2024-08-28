@@ -1,0 +1,29 @@
+public Integer nextPrime(Integer num) {
+    while(!isPrime(num + 1))
+    {
+        num++;
+    }
+
+    return num;
+}
+
+static boolean isPrime(Integer n)
+{
+    Integer count = 0;
+    for(Integer i = 1; i <= n; i++)
+    {
+        if(Math.mod(n, i) == 0)
+        {
+            count++;
+        }
+    }
+
+    if(count == 2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
