@@ -1,0 +1,16 @@
+public Id insertCourse(String name, String details, Integer credits) {
+    apxio__Course__c ap = new apxio__Course__c();
+    ap.Name = name;
+    ap.apxio__Course_Details__c = details;
+    ap.apxio__Credits__c = String.valueOf(credits);
+    if(credits <= 4 && credits > 0)
+    {
+        insert ap;
+    }
+    else
+    {
+        return null;
+    }
+    
+    return ap.Id;
+}
