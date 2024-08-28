@@ -1,0 +1,7 @@
+public Boolean isKeyAccount(Account a) {
+    return (a.Industry == 'Banking' && a.AnnualRevenue >= 600000) ? true :
+           (a.Industry == 'Technology' && a.AnnualRevenue >= 800000) ? true :
+           (a.Industry == 'Retail' && a.AnnualRevenue >= 2000000) ? true :
+           (a.AnnualRevenue >= 500000 && a.Industry != 'Banking' && a.Industry != 'Technology' && a.Industry != 'Retail') ? true :
+           false;
+}
