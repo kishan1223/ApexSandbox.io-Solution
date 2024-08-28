@@ -1,4 +1,4 @@
 public Boolean sameParent(Contact c, Opportunity opp) {
     return (c.AccountId == opp.AccountId ? true : 
-            (c.AccountId == null || opp.AccountId == null) ? false : );
+            (c.AccountId == null || opp.AccountId == null) ? false : false);
 }
