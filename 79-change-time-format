@@ -1,0 +1,22 @@
+public String changeTimeFormat(String strTime) {
+    List<String> result = strTime.split('\\:');
+    Integer hours = Integer.valueOf(result[0]);
+    String mins = result[1];
+    String period;
+
+    if (hours == 0) {
+        hours = 12;
+        period = 'AM';
+    } 
+    else if (hours < 12) {
+        period = 'AM';
+    } 
+    else {
+        if (hours > 12) hours -= 12;
+        period = 'PM';
+    }
+
+    String hrs = (hours < 10) ? '0' + String.valueOf(hours) : String.valueOf(hours);
+
+    return hrs + ':' + mins + ' ' + period;
+}
