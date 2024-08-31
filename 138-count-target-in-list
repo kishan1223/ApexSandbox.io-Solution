@@ -4,7 +4,7 @@ public Integer findTargetCount(List<Integer> nums, Integer target) {
     {
         if(nums == target)
         {
-            count++;
+            count += 1;
         }
     }
 
