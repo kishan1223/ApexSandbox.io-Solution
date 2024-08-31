@@ -1,11 +1,15 @@
 public static Integer arraySum(List<Integer> numbers) {
-    
-    Integer n = 0;
 
-    for(Integer num : numbers)
-    {
-        sum += num;;
+    //code here
+
+    Integer returnValue = 0;
+
+    for(Integer num : numbers) {
+
+        returnValue += num;
+
     }
 
-    return sum;
+    return returnValue;
+
 }
