@@ -9,5 +9,5 @@ public static Integer findLast(List<Integer> nums, Integer target) {
        }
    }
 
-   return (elementIndex == 0 ? -1 : elementIndex)
+   return (elementIndex == 0 ? -1 : elementIndex);
 }
