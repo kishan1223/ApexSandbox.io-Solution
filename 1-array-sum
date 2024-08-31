@@ -4,7 +4,7 @@ public static Integer arraySum(List<Integer> numbers) {
 
     for(Integer num : numbers)
     {
-        n += num;;
+        n += num;
     }
 
     return n;
