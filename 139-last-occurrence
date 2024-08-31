@@ -1,0 +1,13 @@
+public static Integer findLast(List<Integer> nums, Integer target) {
+   
+   Integer elementIndex = 0;
+   for(Integer i = 0; i < nums.size(); i++)
+   {
+       if(nums[i] == target)
+       {
+           elementIndex = i;
+       }
+   }
+
+   return (elementIndex == 0 ? -1 : elementIndex)
+}
