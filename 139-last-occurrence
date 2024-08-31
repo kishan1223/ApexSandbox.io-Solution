@@ -1,6 +1,6 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
    
-   Integer elementIndex = 0;
+   Integer elementIndex = -1;
    for(Integer i = 0; i < nums.size(); i++)
    {
        if(nums[i] == target)
@@ -9,5 +9,5 @@ public static Integer findLast(List<Integer> nums, Integer target) {
        }
    }
 
-   return (elementIndex == 0 ? -1 : elementIndex);
+   return (elementIndex == -1 ? -1 : elementIndex);
 }
