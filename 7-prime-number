@@ -1,0 +1,13 @@
+public Boolean isPrime(Integer num) {
+    int count = 0;
+
+    for(Integer i = 1; i <= num; i++)
+    {
+        if(Math.mod(num, i) == 0)
+        {
+            count++;
+        }
+    }
+
+    return (count == 2 ? true : false);
+}
