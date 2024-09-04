@@ -1,11 +1,8 @@
 public Decimal average(List<Decimal> numbers){
-
-    Decimal sum = 0.0;
-
+    Decimal sum = 0;
     for(Decimal n : numbers)
-
+    {
         sum += n;
-
-    return (sum/numbers.size()).setScale(2);
-
+    }
+    return (sum / numbers.size()).setscale(2); 
 }
