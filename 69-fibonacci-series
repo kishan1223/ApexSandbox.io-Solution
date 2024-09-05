@@ -1,0 +1,10 @@
+public List<Integer> fibonacciSeries(Integer n) {
+    List<Integer> fibonacci = new List<Integer>();
+    fibonacci.add(1);
+    for(Integer i = 1; i <= n; i++)
+    {
+        fibonacci.add(i);
+    }
+
+    return fibonacci;
+}
