@@ -1,12 +1,25 @@
 public Integer secondLargest(List<Integer> numbers) {
+
     numbers.sort();
-    Integer num = numbers[numbers.size() - 1];
+
+    Integer maxNumber = numbers.get(numbers.size()-1);
+
+    Integer num;
+
     for(Integer i : numbers)
+
     {
-        if(i < num)
+
+        if(i < maxNumber)
+
         {
+
             num = i;
+
         }
+
     }
+
     return num;
+
 }
