@@ -1,0 +1,5 @@
+public Integer secondLargest(List<Integer> numbers) {
+    numbers.sort();
+    arr2Max = numbers[numbers.length() - 1];
+    return arr2Max;
+}
