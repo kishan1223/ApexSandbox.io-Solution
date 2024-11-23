@@ -1,10 +1,11 @@
 public Integer secondLargest(List<Integer> numbers) {
-    Integer num = numbers.sort();
+    numbers.sort();
+    Integer num = numbers[numbers.size() - 1];
     for(Integer i : numbers)
     {
         if(i < num)
         {
-            i = num;
+            num = i;
         }
     }
     return num;
