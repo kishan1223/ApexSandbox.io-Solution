@@ -4,7 +4,7 @@ public Integer secondLargest(List<Integer> numbers) {
     {
         if(i < num)
         {
-            num = i;
+            i = num;
         }
     }
     return num;
