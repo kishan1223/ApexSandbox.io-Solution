@@ -1,7 +1,7 @@
 public Integer secondLargest(List<Integer> numbers) {
     numbers.sort();
-    arr1Max = numbers[numbers.size() - 2];
-    arr2Max = numbers[numbers.size() - 1];
+    Integer arr1Max = numbers[numbers.size() - 2];
+    Integer arr2Max = numbers[numbers.size() - 1];
 
     if(arr1Max == arr2Max)
     {
